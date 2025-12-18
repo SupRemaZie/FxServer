@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "general": {
+    "serverName": "LINKINWL"
+  },
+  "server": {
+    "dataPath": "C:/fivem/txData/ESXLegacy_4441B0.base/"
+  }
+}
