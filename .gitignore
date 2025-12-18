@@ -1,0 +1,35 @@
+# FiveM Server GitIgnore
+
+# FXServer Artifacts (Binaries)
+# Decommenter la ligne suivante si vous ne voulez pas sauvegarder les exécutables du serveur
+# server/
+
+# Databases (Évite les erreurs de "Permission Denied" et les commits inutiles)
+txData/*/db/
+txData/default/data/
+txData/linkinWL/data/
+# On garde les fichiers de config mais pas les données temporaires des joueurs
+txData/*/data/playersDB.json
+txData/*/data/cachedData.json
+txData/*/data/stats_playerDrop.json
+txData/*/data/stats_svRuntime.json
+
+# Logs
+txData/*/logs/
+*.log
+
+# Cache
+txData/*/cache/
+server/cache/
+
+# Sensitive Information (Clés API et certificats)
+*.key
+*.crt
+server-monitor-token.key
+server-tls.crt
+server-tls.key
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
